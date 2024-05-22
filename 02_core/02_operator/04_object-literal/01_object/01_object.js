@@ -27,14 +27,27 @@ var student = {
         return `${this.name}(은)는 ${this.age}세입니다.`;
     },
 
-    test : () =>{
+    test : () =>{ // this 를 갖지 않는다.() 함수랑 다른점!
         return `${student.name}(은)는 ${student.age}세입니다.`;
 
+    },
+    inner:{
+        name:"test",
+        getInfo: function (){
+            console.log(this)
+        }
     }
+    
+
 };
+
+console.log("inner함수 출력해보기");
+console.log(student.inner());
 
 console.log("test함수 출력해보기");
 console.log(student.test());
+
+
 
 console.log(typeof student); // 얘는 object 로 출력됨
 
