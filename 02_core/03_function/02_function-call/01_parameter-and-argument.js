@@ -56,6 +56,8 @@ function hi(name = '아무개') {
 // result = hi('');
 
 // 매개변수 기본값 활용
+
+console.log("여기서 끊어봅시다33333333");
 result = hi();
 console.log(result);
 

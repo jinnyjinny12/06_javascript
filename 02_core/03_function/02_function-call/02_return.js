@@ -29,5 +29,6 @@ function result(a){
     a();
 }
 
-result(test);
+test();
+result(test); 
 
