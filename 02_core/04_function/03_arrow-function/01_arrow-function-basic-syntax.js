@@ -49,15 +49,21 @@ console.log(message());
 // 매개변수가 있을 경우
 message = (val1, val2) => "Arrow " + val1 + val2;
 
-// console.log(message('Function', '!'));
-consoel.log(message('여기가 val1', 'val2자리'));
-console.log("===========구분==============");
+console.log(message('Function', '!'));
+console.log(message('Hello','HIHIHIHIHI'));
+
+// consoel.log(message('여기가 val1', 'val2자리'));
 
 // 매개변수가 하나면 소괄호 생략 가능
 // 매개변수가 없거나 여러 개일 경우 생략 불가하다
-message = val => "Arrow " + val;
 
+console.log("===========구분==============");
+
+message = val => "Arrow " + val;
 console.log(message('Functions are GOOD!!!'));
+
+// 변수에 새롭게 함수를 입력하면 재정의됨.
+// 위에 함수와 다르게 리셋되어서 출력됨.
 
 
 let id ="test";
